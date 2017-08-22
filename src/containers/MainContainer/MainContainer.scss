@@ -1,0 +1,20 @@
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  .user-list-container {
+    margin-top: 50px;
+    width: 90%;
+
+    hr {
+      margin: 10px 0;
+    }
+  }
+}
+
+.ant-btn {
+  & + & {
+    margin-left: 10px;
+  }
+}

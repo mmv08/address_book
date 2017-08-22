@@ -1,0 +1,15 @@
+.create-user-modal {
+  .ant-modal-body {
+    .ant-spin-container > * {
+      margin: 10px 0;
+    }
+  }
+}
+
+.not-valid {
+  .ant-btn-primary {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
