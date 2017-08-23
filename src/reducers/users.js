@@ -31,7 +31,7 @@ export default function (state = initialState, action) {
     return {
       ...state,
       isLoading: false,
-      userList: action.data
+      userList: [...action.data]
     };
 
   case actionTypes.OPEN_ADD_USER_MODAL:
@@ -74,7 +74,7 @@ export default function (state = initialState, action) {
     return {
       ...state,
       editUserRequestFetching: false,
-      newUserList
+      userList: newUserList
     };
 
   default:
